@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            height: 100vh;
+            background: black;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 5rem;
+            font-family: sans-serif;
+            letter-spacing: 0.2rem;
+        }
+
+    h1>span {
+        opacity: 0;
+        display: inline-block;
+        animation: animate 1s linear forwards;
+    }
+
+    @keyframes animate {
+        0%{
+            opacity: 0;
+            transform: rotate(90deg);
+            filter: blur(10px);
+        }
+        100% {
+            opacity:1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <video src="" autoplay muted></video>
+        <h1>
+            <span>H</span>
+            <span>E</span>
+            <span>L</span>
+            <span>L</span>
+            <span>O</span>
+        </h1>
+    </section>
+</body>
+</html>
